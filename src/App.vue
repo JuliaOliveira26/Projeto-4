@@ -148,9 +148,11 @@ const mostrarDiv = ref(false)
       </div>
      
     </form>
-    <div v-if="mostrarDiv">
-        <p>Dados enviados com sucesso!</p>
-        <p>Nome: {{ nome }}</p>
+    <div v-if="mostrarDiv" class="container text-align">
+      <p class="text-success">Dados enviados com sucesso!</p>
+
+  <div class="row row-cols-2">
+        <p>Nome: {{ name }}</p>
         <p>Email: {{ email }}</p>
         <p>Senha: {{ pwd }}</p>
         <p>Confirmação da Senha: {{ confSenha }}</p>
@@ -162,11 +164,11 @@ const mostrarDiv = ref(false)
         <p>Linguagens de Programação: {{ LingProgramação }}</p>
         <p>Biografia: {{ Biografia }}</p>
       </div>
+      </div>
   </div>
 </template>
 
 <style scoped>
-body {
-  background-color: aqua;
-}
+
+
 </style>
